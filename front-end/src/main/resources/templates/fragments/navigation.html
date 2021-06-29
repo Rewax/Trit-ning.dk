@@ -1,0 +1,28 @@
+<html xmlns:th = "http://www.thymeleaf.org">
+<nav th:fragment="navigation" class="navbar navbar-expand-lg sticky navbar-dark" style="">
+    
+    <a class="navbar-brand" href="#"><img src="/images/logo.png" style="width:35%;"/></a>
+    <button class="navbar-toggler" type="button" style="color:black;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+             <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto " id="ulNav">
+            <li class="nav-item ml-5 mr-5">
+                <a class="nav-link text-truncate" href="/">Forside</a>
+            </li>
+            <li id="frontPageList" class="navbar-nav ml-auto">
+            <li>
+            </li>
+            <li class="nav-item ml-4 ml-5 mr-5">
+                <a class="nav-link text-truncate" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item ml-4 ml-5 mr-5">
+                <a class="nav-link text-truncate" href="/contact">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+    <script src="/js/user/navigation.js"></script>
+</nav>

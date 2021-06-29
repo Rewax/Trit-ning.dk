@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Blogpost</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/css/user/blogPost.css" type="text/css" rel="stylesheet">
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<header>
+    <!--=================== NAVIGATION ============================ -->
+    <div th:replace="fragments/navigation :: navigation">
+    </div>
+</header>
+<body>
+    <!--=================== billede ============================ -->
+
+<main class="container">
+    <div align="center">
+
+        <h3 class="BlogTitle p-5" style="text-align: center" id="title"></h3>
+
+        <div class="row">
+            <div align="left" class="row form-group ml-5 mr-5 w-100">
+                <div class="w-100">
+                    <img class="blogImage pb-5 m-auto w-50 col-sm" id="blogImage"src="">
+                </div>
+
+                <article class="blogtext col-sm-12" id="description" name="description" >
+<!--                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,-->
+<!--                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.-->
+<!--                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.-->
+<!--                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,-->
+<!--                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.-->
+                </article>
+
+            </div>
+        </div>
+    </div>
+</main>
+<!--=================== Footer ============================ -->
+<div th:replace="fragments/footer :: footerFragment"></div>
+</body>
+<script src="/js/user/blogPost.js"></script>
+</html>

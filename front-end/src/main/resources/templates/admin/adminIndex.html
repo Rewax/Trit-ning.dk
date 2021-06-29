@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Lav et Event</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <link href="/css/admin/adminindex.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!--=================== NAVIGATION ============================ -->
+    <header>
+        <div th:replace="fragments/adminNav :: adminNav"></div>
+    </header>
+
+<main class="container w-75">
+        <h3 class="text-center mb-5"></h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <a class="w-100 btn p-3 btn-secondary" href="/admin/view/pages">Se Alle Sider</a>
+            </div>
+            <div class="col-lg-5">
+                <a class="w-100 p-3 btn btn-secondary" href="/admin/create/page">Opret Side</a>
+            </div>
+        </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-5">
+            <a class="w-100 btn p-3 btn-secondary" href="/admin/view/blogpost">Se Blog Indslag</a>
+        </div>
+        <div class="col-lg-5">
+            <a class="w-100 p-3 btn btn-secondary" href="/admin/create/blogpost">Opret Blog Indslag</a>
+        </div>
+            </div>
+        <div class="row justify-content-center mt-5">
+        <div class="col-lg-5">
+            <a class="w-100 p-3 btn btn-secondary" href="/admin/view/pages">Se Udtalelse</a>
+        </div>
+            <div class="col-lg-5">
+                <a class="w-100 btn p-3 btn-secondary" href="/admin/create/review">Opret Udtalelse</a>
+            </div>
+    </div>
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-5">
+            <a class="w-100 p-3 btn btn-secondary" href="/admin/view/admins">Se Admin</a>
+        </div>
+        <div class="col-lg-5">
+            <a class="w-100 btn p-3 btn-secondary" href="/admin/create/admin">Opret Admin</a>
+        </div>
+    </div>
+
+
+    </div>
+</main>
+
+</body>
+</html>

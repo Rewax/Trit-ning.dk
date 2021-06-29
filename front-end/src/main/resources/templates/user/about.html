@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/css/user/about.css" type="text/css" rel="stylesheet">
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div th:replace="fragments/navigation :: navigation"></div>
+    <div>
+        <img class="bannerImg" src="">
+    </div>
+
+</header>
+<main class="aboutMain w-75 m-auto">
+
+    <h3 class="title p-5" style="text-align: center">Om mig</h3>
+
+    <div class="row">
+        <div class="col-sm-4 mobileImg">
+            <img class="aboutImg float-right" src="/images/aboutbillede.jpg">
+        </div>
+        <div class="col-sm-8">
+            <div align="left" class="form-group ml-5 mr-5 abouttext">
+                <p>Jeg er født i 1968, og har dyrket sport siden barnsben. Jeg betragter mig selv som alm. motionist, og har dyrket triatlon siden 2006.<br> I mine år som triatlet, har jeg kørt løb på alle distancer … dog mest de lange.</p>
+                <h3>Uddannelse:</h3>
+                <ul>
+                    <li>DIF Træner 1 + 2</li>
+                    <li>Triatlon Danmark Træner 1 + 2</li>
+                    <li>TRX 1 STC</li>
+                    <li>TRX 3 GTC</li>
+                    <li>Fuldført og bestået coaching forløb hos Mind4coaching og Lilholt coaching.</li>
+                    <li>Er uddannet ITU Dommer siden 2016.</li>
+                </ul>
+                <h3>Erfaring:</h3>
+                <p>Jeg er træner i Islev Triathlon Klub, hvor jeg
+                    bl.a. har været svømme træner i 4 år, TRX instruktør i 2 år og er på 10. sæson cykel træner.<br>
+                    Jeg er også cykel- og TRX instruktør i Sats.<br>
+                    Jeg har været personlig triatlontræner siden 2014.</p>
+            </div>
+        </div>
+        <div class="col-sm-4 desktopImg">
+            <img class="aboutImg float-right" src="/images/aboutbillede.jpg">
+        </div>
+    </div>
+</main>
+<div th:replace="fragments/footer :: footerFragment"></div>
+</body>
+</html>

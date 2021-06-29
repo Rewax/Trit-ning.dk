@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cykel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/css/user/activity.css" type="text/css" rel="stylesheet">
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+<header>
+    <!--=================== NAVIGATION ============================ -->
+    <div th:replace="fragments/navigation :: navigation">
+
+    </div>
+</header>
+<body>
+<div>
+    <!--=================== billede ============================ -->
+    <div align="center">
+        <img class="activityimage image" src="/images/cykelbanner.jpg" >
+    </div>
+</div>
+<main class="container" align="center">
+    <h3 class="activityTitle p-5" id="title" style="text-align: center">Cykling</h3>
+    <div class="row">
+        <div align="left" class="row form-group ml-5 mr-5 w-100">
+            <div class=" imageactivity pb-5 col-sm w-100">
+            <img class="cycleimage m-auto" id="blogImage" src="">
+            </div>
+            <article class="activitytext col-sm-12" id="desc">
+
+            </article>
+        </div>
+    </div>
+</main>
+<!--=================== Footer ============================ -->
+<div th:replace="fragments/footer :: footerFragment"></div>
+</body>
+<script src="/js/user/page.js"></script>
+</html>

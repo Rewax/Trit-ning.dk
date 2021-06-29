@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th ="http://www.thymeleaf.org">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/tinymce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Create User</title>
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <link href="/css/admin/createAdmin.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div th:replace="fragments/adminNav :: adminNav"></div>
+</header>
+
+<main class="container">
+    <a href="/admin/index" style="color:black;">
+        <i class='fas fa-arrow-left mt-5' style='font-size:36px'></i>
+    </a>
+
+    <div align="center">
+
+        <!-- === CREATE USER === -->
+        <form class="contact w-50" action="" method="post" id="registerForm">
+            <div class="valid" id="notFilled"></div>
+
+            <h3 class="text-center mb-2">Opret Bruger</h3>
+            <br>
+
+            <!--            USER EMAIL -->
+            <div class="form-group ml-5 mr-5">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" id="email" required name="mail" placeholder="Email">
+            </div>
+
+            <!--            PASSWORD-->
+            <div class="form-group ml-5 mr-5">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="Kodeord">
+                <div id="passwordValid" class="valid"></div>
+            </div>
+
+            <!--            PASSWORD-->
+            <div class="form-group ml-5 mr-5">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm_password" required placeholder="Bekræft Kodeord">
+            </div>
+
+            <!--              SUBMIT -->
+            <button  type="submit" id="submitButton" class="w-50 btn form-button ml-5 mr-5">Opret Bruger</button>
+
+        </form>
+    </div>
+</main>
+</body>
+
+<script src="/js/admin/createAdmin.js"></script>
+
+</html>

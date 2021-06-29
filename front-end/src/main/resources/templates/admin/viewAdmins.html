@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/b6a1220657.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>View Admins</title>
+    <link href="/css/user/fragments.css" type="text/css" rel="stylesheet">
+    <link href="/css/admin/viewAdmins.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div th:replace="fragments/adminNav :: adminNav"></div>
+</header>
+
+<a href="/admin/index" style="color:black;">
+    <i class='fas fa-arrow-left' style='font-size:36px'></i>
+</a>
+
+<main class="container">
+    <div class="row">
+        <div class="col-sm-3 mt-5">
+            <h1 class="text-center">Rediger Admins</h1>
+        </div>
+    </div>
+
+    <!--VIEW BLOG LIST ============= -->
+    <table class="table  mt-5 table-striped table-bordered table-hover">
+        <thead>
+        <tr align="center">
+            <th style="width:6%" scope="col">#</th>
+            <th style="width:12%" scope="col">Mail</th>
+            <th style="width:12%" scope="col">Handling</th>
+        </tr>
+        </a>
+        </thead>
+        <tbody class="tbody">
+
+        <tr align="center">
+            <th>1</th>
+            <th >Jeffer@King.dk</th>
+            <td align="center">
+
+                <!-- ACTIONS -->
+                <a class="mt-3 w-10 btn btn-info">Rediger Admin</a>
+                <a class="mt-3 w-10 btn btn-danger" onclick="deleteUser()">Slet</a>
+            </td>
+        </tr>
+        <tr align="center">
+            <th>2</th>
+            <th >Jeffer@King.dk</th>
+            <td align="center">
+
+                <!-- ACTIONS -->
+                <a class="mt-3 w-10 btn btn-info">Rediger Admin</a>
+                <a class="mt-3 w-10 btn btn-danger" onclick="deleteUser()">Slet</a>
+            </td>
+        </tr>
+        <tr align="center">
+            <th>3</th>
+            <th >Jeffer@King.dk</th>
+            <td align="center">
+
+                <!-- ACTIONS -->
+                <a class="mt-3 w-10 btn btn-info">Rediger Admin</a>
+                <a class="mt-3 w-10 btn btn-danger" onclick="deleteUser()">Slet</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+<script src="/js/admin/viewAdmins.js"></script>
+</html>

@@ -1,0 +1,29 @@
+.image {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacttext {
+  font-family: "Comic Sans MS";
+}
+
+.kontakt {
+  font-family: "Comic Sans MS";
+}
+
+@media screen and (max-width: 960px) {
+  .mobileInput {
+    display: block !important;
+  }
+
+  .desktopInput {
+    display: none !important;
+  }
+
+  .image {
+    margin-top: 30%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
